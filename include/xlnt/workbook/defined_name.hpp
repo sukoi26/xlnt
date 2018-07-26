@@ -214,14 +214,14 @@ private:
     optional<std::string> help_;
     optional<std::string> statusBar_;
     optional<unsigned int> localSheetId_;
-    bool hidden_;
-    bool function_;
-    bool vbProcedure_;
-    bool xlm_;
+    optional<bool> hidden_;
+    optional<bool> function_;
+    optional<bool> vbProcedure_;
+    optional<bool> xlm_;
     optional<unsigned int> functionGroupId_;
     optional<std::string> shortcutKey_;
-    bool publishToServer_;
-    bool workbookParameter_;
+    optional<bool> publishToServer_;
+    optional<bool> workbookParameter_;
 };
 
 } // namespace xlnt
