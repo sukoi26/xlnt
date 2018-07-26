@@ -225,7 +225,7 @@ bool defined_name::has_localSheetId ()
 ///
 bool defined_name::hidden () const
 {
-    return hidden_;
+    return hidden_.get();
 }
 
 void  defined_name::hidden (bool hidden)
@@ -239,7 +239,7 @@ void  defined_name::hidden (bool hidden)
 
 bool defined_name::function () const
 {
-    return function_;
+    return function_.get();
 }
 
 void  defined_name::function (bool function)
@@ -253,7 +253,7 @@ void  defined_name::function (bool function)
 
 bool defined_name::vbProcedure () const
 {
-    return vbProcedure_;
+    return vbProcedure_.get();
 }
 
 void  defined_name::vbProcedure (bool vbProcedure)
@@ -267,7 +267,7 @@ void  defined_name::vbProcedure (bool vbProcedure)
 
 bool defined_name::xlm () const
 {
-    return xlm_;
+    return xlm_.get();
 }
 
 void  defined_name::xlm (bool xlm)
@@ -327,7 +327,7 @@ bool defined_name::has_shortcutKey()
 
 bool defined_name::publishToServer () const
 {
-    return publishToServer_;
+    return publishToServer_.get();
 }
 
 void defined_name::publishToServer (bool publishToServer)
@@ -340,7 +340,7 @@ void defined_name::publishToServer (bool publishToServer)
 ///
 bool defined_name::workbookParameter () const
 {
-    return workbookParameter_;
+    return workbookParameter_.get();
 }
 
 void defined_name::workbookParameter (bool workbookParameter)
